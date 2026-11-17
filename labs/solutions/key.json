@@ -1,0 +1,272 @@
+{
+ "seed": 201,
+ "lab11": {
+  "devices": [
+   "P01",
+   "P03",
+   "P07",
+   "P09",
+   "P10",
+   "P12"
+  ],
+  "not_devices": [
+   "P02",
+   "P04",
+   "P05",
+   "P06",
+   "P08",
+   "P11"
+  ],
+  "traps": [
+   "P03",
+   "P04",
+   "P06",
+   "P09",
+   "P11"
+  ]
+ },
+ "lab12": {
+  "claimed": {
+   "sens": 0.72,
+   "spec": 0.86,
+   "accuracy": 0.857
+  },
+  "threshold": 0.05,
+  "capacity": 30,
+  "sites": [
+   [
+    "الطوارئ والعناية في مستشفى أرياف المركزي",
+    180,
+    0.85,
+    0.03
+   ],
+   [
+    "العيادات الخارجية في مستشفى السهل العام",
+    220,
+    0.05,
+    0.008
+   ],
+   [
+    "مراكز الرعاية الأولية (فحوص دورية وما قبل التوظيف)",
+    400,
+    0.0,
+    0.001
+   ]
+  ]
+ },
+ "lab21": {
+  "enrol_from": 91,
+  "high_need_from": 2
+ },
+ "lab22": {
+  "baseline_minutes": 6.5,
+  "notes": [
+   {
+    "id": "N01",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N02",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 1
+   },
+   {
+    "id": "N03",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N04",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 1
+   },
+   {
+    "id": "N05",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N06",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 1
+   },
+   {
+    "id": "N07",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N08",
+    "omissions": 0,
+    "invented": 1,
+    "critical": 1
+   },
+   {
+    "id": "N09",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N10",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N11",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N12",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N13",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N14",
+    "omissions": 0,
+    "invented": 1,
+    "critical": 1
+   },
+   {
+    "id": "N15",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N16",
+    "omissions": 0,
+    "invented": 1,
+    "critical": 0
+   },
+   {
+    "id": "N17",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N18",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N19",
+    "omissions": 0,
+    "invented": 0,
+    "critical": 0
+   },
+   {
+    "id": "N20",
+    "omissions": 1,
+    "invented": 0,
+    "critical": 0
+   }
+  ]
+ },
+ "map": [
+  {
+   "id": "U01",
+   "value": 4,
+   "readiness": 4,
+   "tier": "عالٍ"
+  },
+  {
+   "id": "U02",
+   "value": 4,
+   "readiness": 2,
+   "tier": "عالٍ"
+  },
+  {
+   "id": "U03",
+   "value": 4,
+   "readiness": 3,
+   "tier": "متوسط"
+  },
+  {
+   "id": "U04",
+   "value": 3,
+   "readiness": 5,
+   "tier": "منخفض"
+  },
+  {
+   "id": "U05",
+   "value": 3,
+   "readiness": 4,
+   "tier": "منخفض"
+  },
+  {
+   "id": "U06",
+   "value": 3,
+   "readiness": 4,
+   "tier": "منخفض"
+  },
+  {
+   "id": "U07",
+   "value": 5,
+   "readiness": 1,
+   "tier": "عالٍ"
+  },
+  {
+   "id": "U08",
+   "value": 4,
+   "readiness": 3,
+   "tier": "عالٍ"
+  },
+  {
+   "id": "U09",
+   "value": 2,
+   "readiness": 5,
+   "tier": "منخفض"
+  },
+  {
+   "id": "U10",
+   "value": 3,
+   "readiness": 1,
+   "tier": "عالٍ"
+  },
+  {
+   "id": "U11",
+   "value": 4,
+   "readiness": 2,
+   "tier": "متوسط"
+  },
+  {
+   "id": "U12",
+   "value": 3,
+   "readiness": 4,
+   "tier": "متوسط"
+  },
+  {
+   "id": "U13",
+   "value": 4,
+   "readiness": 5,
+   "tier": "منخفض"
+  },
+  {
+   "id": "U14",
+   "value": 2,
+   "readiness": 5,
+   "tier": "منخفض"
+  }
+ ]
+}
