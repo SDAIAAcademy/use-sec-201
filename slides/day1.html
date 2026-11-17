@@ -1,158 +1,445 @@
 <section class="slide title" id="title" data-auto="title">
-  <aside class="notes">REPLACE: الترحيب، والتعريف بنفسك، وسؤال للقاعة يضبط الإيقاع، وإيقاع اليوم</aside>
+  <aside class="notes"><p>رحّب بالمشاركين وعرّف بنفسك. سؤال برفع اليد يضبط الإيقاع: من وقّع على شراء أداة ذكاء اصطناعي صحية أو أوصى بها؟ من سأل مورِّدًا عن معدل الانتشار في بياناته؟ من يعرف من يُسأل في جهته حين تخطئ أداة؟</p><p>اليوم جلستان طويلتان، في كل منهما نحو 75 دقيقة من المفاهيم بثلاث كتل، ثم مختبر مدته 75 دقيقة. الاستراحات بزر B، وليست شرائح.</p></aside>
 </section>
 
-<section class="slide" id="agenda" data-auto="agenda"></section>
+<section class="slide" id="agenda" data-auto="agenda">
+  <aside class="notes"><p>جلستان اليوم: الوضع النظامي للمنتجات صباحًا، ثم ما يعنيه رقم أداة الفرز عند مرضانا. غدًا: من تضرّه درجة المخاطر، ومن يراقب أداة التوثيق، ثم الخريطة.</p></aside>
+</section>
+
+<section class="slide" id="course-at-a-glance" data-label="المقرر">
+  <div class="kicker">المقرر في لمحة</div>
+  <h2>يومان من المختبرات، ثم خريطة تدافع عنها</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>اليوم 1 · ماذا يعني الرقم هنا؟</h4><p class="small">جهاز طبي أم أداة إدارية؟ ثم تنبيه الفرز عند معدل الانتشار في مواقعنا.</p><span class="pill c-teal">جدول التصنيف وبيان المجلس</span></div>
+    <div class="card c-coral"><h4>اليوم 2 · من يتضرر، ومن يراقب؟</h4><p class="small">الوسم الذي تتعلمه درجة المخاطر، ثم من ادعاء المورِّد إلى التجربة الصامتة.</p><span class="pill c-coral">مذكرة التدقيق والخطة</span></div>
+    <div class="card c-purple"><h4>المناقشة الختامية</h4><p class="small">فحص فردي دون ذكاء اصطناعي، ثم خريطتك أمام مجلس حوكمة سريرية في جلسة محاكاة.</p><span class="pill c-purple">الخريطة ومشروع تجريبي واحد</span></div>
+  </div>
+  <div class="callout tip mt"><b>الخريطة تبدأ اليوم.</b> آخر خطوة في كل مختبر تضيف سطرًا إليها، فتصل إلى المناقشة الختامية بأربعة أسطر جاهزة.</div>
+  <aside class="notes"><p>المقرر لمن يختار أدوات الذكاء الاصطناعي الصحية ويشرف عليها، لا لمن يستعملها في رعاية مريض بعينه: ذلك مقرر <span class="en">USE-PRO-209</span>. نفترض ما تعلّموه في <span class="en">USE-FLU-103</span>: جدول الألف حالة، والوسم البديل، والتسرّب في بطاقات البيانات.</p></aside>
+</section>
+
+<section class="slide" id="aryaf-network" data-label="الحالة الدراسية">
+  <div class="kicker">حالة دراسية واحدة طوال المقرر</div>
+  <h2>شبكة أرياف الصحية: مدينة وضواحيها وقرى نائية</h2>
+  <div class="cols cols-21">
+    <div class="stack">
+      <p class="lead">شبكة إقليمية افتراضية: مستشفى مركزي، ومستشفى عام، و24 مركزًا للرعاية الأولية. مجلس حوكمتها السريرية ينظر في ثلاث أدوات.</p>
+      <div class="flow">
+        <div class="step c-teal"><b>«بارق»</b>يفرز صور الصدر</div>
+        <div class="arrow">←</div>
+        <div class="step c-cyan"><b>«أولوية»</b>يرتّب مرضى برنامج الرعاية</div>
+        <div class="arrow">←</div>
+        <div class="step c-coral"><b>«مُحرِّر»</b>يكتب ملاحظة الزيارة</div>
+      </div>
+    </div>
+    <div class="card c-navy flat"><h4>من في القاعة معك</h4><p class="small mb0">د. مروة الحامدي، كبيرة الأطباء ورئيسة المجلس. د. منذر البطيري، رئيس الأشعة. د. إيناس الذبيب، مديرة صحة السكان. د. كريم المعيقل، كبير مسؤولي المعلومات الطبية. هناء الخويلدي، مسؤولة حماية البيانات. شريف السعاوي، الهندسة الطبية والشؤون التنظيمية.</p></div>
+  </div>
+  <aside class="notes"><p>كل الأسماء افتراضية. اثنتان أخريان تظهران لاحقًا: نغم المشيطي، قائدة جودة التمريض وتجربة المريض، وطرفة الجربوع، طبيبة الأسرة وقائدة مراكز القرى النائية. اسأل: من منكم يجلس في مقعد أحد هؤلاء في جهته؟</p><p>البيانات اصطناعية ومولَّدة ببذرة ثابتة، عدا درجات الفرز بعد الظهر: هي درجات حقيقية لنموذج بحثي مفتوح على صور عامة.</p></aside>
+</section>
+
+<section class="slide" id="ai-policy" data-label="سياسة الذكاء الاصطناعي">
+  <div class="kicker">كيف نستخدم الذكاء الاصطناعي هنا</div>
+  <h2>ثلاث قواعد، بحسب ما يقيسه كل نشاط</h2>
+  <table class="t">
+    <tr><th>النشاط</th><th>القاعدة</th><th>لماذا</th></tr>
+    <tr><td>المختبر 1.1، والفحص الفردي في المناقشة الختامية</td><td><b>دون ذكاء اصطناعي</b></td><td>الحكم في الغرض المقصود وقراءة الرقم مهارتك أنت</td></tr>
+    <tr><td>المختبرات 1.2 و2.1 و2.2</td><td><b>مساعد بدور المعلّم</b></td><td>يشرح الحساب، والحكم والأرقام لك</td></tr>
+    <tr><td>الخريطة</td><td><b>مسموح كاملًا</b></td><td>تدافع عنها حيًّا، وتعيد تقييم حالة يختارها المجلس</td></tr>
+  </table>
+  <div class="callout warn mt"><b>لا بيانات مريض حقيقية في أي مساعد عام.</b> ملفات المقرر اصطناعية أو عامة، وتكفي لكل خطوة.</div>
+  <aside class="notes"><p>هذه السياسة من وصف المقرر، لا من اختيار المدرب. قلها بوضوح الآن: من فتح مساعدًا في المختبر 1.1 فقد التمرين على مهارة تُختبر لاحقًا دون مساعد.</p></aside>
+</section>
 
 <!-- الجلسة 1 -->
 
-<section class="slide section" id="s1" data-auto="section" data-session="1"></section>
-
-<section class="slide" id="s1-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide section" id="s1" data-auto="section" data-session="1">
+  <aside class="notes"><p>الجلسة الأولى: نحو 75 دقيقة من المفاهيم بثلاث كتل (الاستخدامات والحصر، الغرض المقصود وما يتطلبه، المساءلة)، ثم المختبر 1.1.</p></aside>
 </section>
 
-<section class="slide" id="s1-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="three-uses" data-lo="LO1">
+  <div class="kicker">الاستخدامات التي ترافقنا</div>
+  <h2>ثلاثة استخدامات، وثلاثة أسئلة مختلفة</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>فرز التصوير</h4><p class="small mb0">يرفع الصورة المشتبه فيها إلى أول قائمة القراءة. السؤال: <b>كم تنبيهًا صحيحًا عند مرضانا؟</b></p></div>
+    <div class="card c-cyan"><h4>درجات مخاطر صحة السكان</h4><p class="small mb0">ترتّب المرضى لبرنامج متابعة. السؤال: <b>ماذا تعلّمت الدرجة، ومن تُسقط؟</b></p></div>
+    <div class="card c-coral"><h4>التوثيق المحيطي</h4><p class="small mb0">يستمع إلى الزيارة ويكتب مسودة الملاحظة. السؤال: <b>ماذا يُغفل، وماذا يختلق؟</b></p></div>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <div class="callout note mt"><b>والسؤال المشترك:</b> هل الأداة جهاز طبي؟ الجواب يحدد ما تطلبه من المورِّد ومن نفسك.</div>
+  <aside class="notes"><p>اربط كل استخدام بمختبر: الفرز بعد الظهر، والدرجة صباح الغد، والتوثيق بعد ظهر الغد. السؤال المشترك موضوع هذه الجلسة.</p></aside>
+</section>
+
+<section class="slide" id="prework-inventory" data-lo="LO1">
+  <div class="kicker">ماذا وجدتم في حصركم</div>
+  <h2>أكثر أدواتكم لا تحمل اسم «الذكاء الاصطناعي»</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>درجة خطر داخل الملف الإلكتروني</li>
+      <li>ترتيب قائمة انتظار أو قائمة قراءة</li>
+      <li>تنبيه دوائي أو تنبيه تدهور</li>
+      <li>مساعد عام اشترته الإدارة لغرض آخر</li>
+    </ul>
+    <div class="card c-navy flat"><h4>سؤالان من الحصر</h4><p class="small mb0">أي أداة لا تعرف من يملكها عندكم؟ وأي أداة لا تعرف على أي بيانات اختُبرت؟ هذان أول سطرين في أي حوكمة.</p></div>
+  </div>
+  <aside class="notes"><p>افتح الحصر الذي سلّموه قبل الورشة (العمل التحضيري، نحو ساعتين). اقرأ ثلاث أدوات من ثلاثة مشاركين دون أسماء جهاتهم. اسأل القاعة عن السؤالين على اليمين. من لم يسلّم حصره يستخدم «إنذار مبكر» في المختبر ويكمل حصره مساءً.</p></aside>
+</section>
+
+<section class="slide" id="intended-use-decides" data-lo="LO1">
+  <div class="kicker">القاعدة</div>
+  <h2>الغرض المقصود يحدد الوضع، لا التقنية</h2>
+  <p class="lead">بحسب إرشادات الهيئة العامة للغذاء والدواء، يُنظَّم منتج الذكاء الاصطناعي جهازًا طبيًا إذا قصد مطوِّره أن يُستخدم في:</p>
+  <div class="cols cols-3 gap-s mt-s">
+    <div class="card tint c-teal"><h4>الفحص والكشف</h4><p class="small mb0">والتشخيص</p></div>
+    <div class="card tint c-cyan"><h4>المراقبة</h4><p class="small mb0">لحالة أو عملية فسيولوجية</p></div>
+    <div class="card tint c-coral"><h4>العلاج والتدبير</h4><p class="small mb0">لأي حالة مرضية</p></div>
+  </div>
+  <div class="callout tip mt"><b>ويُقرأ الغرض</b> من مواصفات المنتج وتعليمات استخدامه وما يقوله مطوِّره عنه.</div>
+  <aside class="notes"><p>هذه القاعدة كما في الإرشاد <span class="en">MDS-G010</span>، بكلمات المقرر. المقرر لا يعلّم فئات المخاطر للأجهزة: لم نعتمد عليها هنا، ومن سأل عنها فأحله إلى متطلبات إذن التسويق لدى الهيئة.</p><p>المصادر: SFDA, Guidance for AI/ML-Enabled Medical Devices (MDS-G010)، قسم Intended use.</p></aside>
+</section>
+
+<section class="slide" id="same-tech-two-verdicts" data-lo="LO1">
+  <div class="kicker">مثال من الشبكة</div>
+  <h2>التقنية نفسها، وحكمان مختلفان</h2>
+  <table class="t">
+    <tr><th></th><th>«مُحرِّر»</th><th>«مُحرِّر بلس»، الإصدار 3</th></tr>
+    <tr><td>ما يفعله</td><td>يكتب مسودة ملاحظة يوقّعها الطبيب</td><td>يكتب المسودة <b>ويقترح تشخيصات وجرعات</b></td></tr>
+    <tr><td>الغرض المعلن</td><td>تخفيف عبء الكتابة، دون تشخيص أو علاج</td><td>«تحديث اعتيادي لا يغيّر طبيعة المنتج»</td></tr>
+    <tr class="hl"><td>الحكم</td><td>ليس جهازًا طبيًا</td><td>جهاز طبي</td></tr>
+  </table>
+  <div class="callout warn mt"><b>اسم التحديث لا يحكم.</b> خاصية جديدة غيّرت الغرض، فتغيّر الحكم وما يلزم قبل التشغيل.</div>
+  <aside class="notes"><p>هذان المنتجان P02 وP03 في المختبر، ولا بأس بكشفهما: الفخ يبقى في التطبيق على العشرة الباقية. اسأل: لو لم يقرأ أحد في الشبكة وصف الإصدار الجديد، من كان سيلاحظ؟ الجواب عادة: لا أحد، ولذلك ضبط التغييرات في الكتلة التالية.</p></aside>
+</section>
+
+<section class="slide" id="three-traps" data-lo="LO1">
+  <div class="kicker">أين يقع الخطأ</div>
+  <h2>ثلاثة أوصاف تخدع القارئ المستعجل</h2>
+  <div class="cols cols-3">
+    <div class="card c-coral"><h4>«العافية»</h4><p class="small mb0">تطبيق يسوَّق للعافية ثم يخبر المستخدم بحالته المحتملة وبدرجة الاستعجال. الغرض طبي.</p></div>
+    <div class="card c-amber"><h4>كلمات سريرية</h4><p class="small mb0">أداة فوترة تقرأ التشخيصات لتقترح رموز المطالبات. الغرض مالي.</p></div>
+    <div class="card c-purple"><h4>أداة عامة</h4><p class="small mb0">مساعد كتابة عام، ومورِّده يقول إنه غير مخصص لأغراض طبية، وعيادة تفسّر به التحاليل.</p></div>
+  </div>
+  <div class="callout tip mt"><b>اسأل كل مرة:</b> ما الفعل، وعلى من يقع أثره، وماذا أعلن المورِّد؟</div>
+  <aside class="notes"><p>الثالثة أخطر: المنتج ليس جهازًا بنص مورِّده، لكن استعماله الطبي يقع على الشبكة. نعود إليه في شريحة الاستخدام خارج الغرض.</p></aside>
+</section>
+
+<section class="slide" id="check-wellness-app" data-lo="LO1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما الذي يقرر الحكم هنا؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO1">
+    <p class="lead">تطبيق يسوَّق تحت عنوان «نمط حياة صحي»، يسأل عن الأعراض ثم يقول للمستخدم: «راجع الطوارئ الآن» أو «انتظر وراقب». هل هو جهاز طبي؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يحكم بالعنوان التسويقي: كلمة العافية لا تنفي غرضًا طبيًا يظهر في ما تفعله الأداة">لا، فالمورِّد صنّفه تطبيقًا لنمط الحياة</div>
+      <div class="opt" data-ok>نعم، لأنه يحدد حالة محتملة ودرجة استعجالها لشخص بعينه</div>
+      <div class="opt" data-why="يحكم بالتقنية: التعلم الآلي لا يجعل المنتج جهازًا، والغرض هو الذي يجعله">نعم، لأنه يستخدم نموذج تعلم آلي</div>
+      <div class="opt" data-why="يخلط بين الحكم ومن يقرأ النتيجة: غياب الطبيب يزيد الخطر ولا يغيّر الغرض">لا، لأن الطبيب لا يرى نتيجته</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> تحديد الحالة المحتملة ودرجة الاستعجال تشخيص وتدبير لحالة مرضية. الغرض يُقرأ من فعل الأداة ووصفها، لا من عنوانها.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. إن اختار كثيرون «ج» فارجع إلى شريحة «التقنية نفسها، وحكمان مختلفان». إن اختاروا «د» فقل: غياب الطبيب سبب لأن نطلب أكثر، لا لأن نطلب أقل.</p></aside>
+</section>
+
+<section class="slide" id="what-a-device-requires" data-lo="LO1">
+  <div class="kicker">إن كان جهازًا طبيًا</div>
+  <h2>يطلب الإرشاد من المصنِّع ثلاثة أدلة، ويطلب تحققًا محليًا</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · ارتباط سريري صحيح</b>المخرج مرتبط بالحالة المقصودة</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · تحقق تحليلي وتقني</b>يعالج المدخلات ويخرج النتيجة بدقة</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>3 · تحقق سريري</b>نتيجة ذات معنى سريري عند المرضى المقصودين</div>
+  </div>
+  <ul class="bullets mt">
+    <li>جهاز اعتُمد في بلد آخر <b>يُتحقق منه محليًا</b></li>
+    <li>ويُراقَب بعد طرحه في السوق: السلامة والفعالية والأداء في الواقع</li>
+  </ul>
+  <aside class="notes"><p>اسأل المورِّد عن كل خطوة: على أي مرضى؟ في أي مواقع؟ بأي معيار مرجعي؟ ونحن، المشتري، نسأل أنفسنا: من يتحقق محليًا قبل التشغيل، ومن يراقب بعده؟ هذا ما نكتبه في العمود الخامس من جدول المختبر.</p><p>المصادر: SFDA MDS-G010، قسم Clinical Evaluation وقائمة التوصيات.</p></aside>
+</section>
+
+<section class="slide" id="what-a-tool-requires" data-lo="LO1">
+  <div class="kicker">وإن لم يكن جهازًا</div>
+  <h2>«ليس جهازًا» لا تعني «لا يتطلب شيئًا»</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>البيانات</h4><p class="small mb0">البيانات الصحية في نظام حماية البيانات الشخصية <b>بيانات حساسة</b>، والوصول إليها مقصور على أقل عدد من العاملين وبقدر ما تتطلبه الخدمة.</p></div>
+    <div class="card c-coral flat"><h4>الملكية والاختبار</h4><p class="small mb0">مالك مسمّى عندنا، واختبار على بياناتنا قبل التشغيل، وخطة لكل إصدار جديد.</p></div>
+    <div class="card c-purple flat"><h4>حدود الغرض</h4><p class="small mb0">ما يمنع أن تُستخدم الأداة في غرض طبي لم يعلنه مورِّدها.</p></div>
+    <div class="card c-navy flat"><h4>من يُسأل</h4><p class="small mb0">مسؤولة حماية البيانات تُستشار قبل المعالجة، لا بعدها.</p></div>
+  </div>
+  <aside class="notes"><p>هناء الخويلدي، مسؤولة حماية البيانات، تجلس هنا. «مُحرِّر» ليس جهازًا طبيًا، لكنه يسجّل صوت المريض: البيانات الحساسة وإذن المريض أول ما تسأل عنه.</p><p>المصادر: نظام حماية البيانات الشخصية، تعريف البيانات الحساسة والبيانات الصحية، والمادة 23.</p></aside>
+</section>
+
+<section class="slide" id="change-control" data-lo="LO1">
+  <div class="kicker">ضبط التغييرات</div>
+  <h2>كل إصدار جديد سؤال جديد</h2>
+  <div class="cols cols-2 mid">
+    <div class="stack">
+      <div class="stat center"><div class="big">10 أيام</div><div class="lbl">مهلة المصنِّع لإبلاغ الهيئة بتغيير جوهري</div></div>
+      <div class="stat center"><div class="big">30 يومًا</div><div class="lbl">لتغيير غير جوهري</div></div>
+    </div>
+    <ul class="bullets">
+      <li><b>جوهري</b>: يُتوقع أن يمس السلامة أو الفعالية مباشرة</li>
+      <li>المصنِّع يصنّف التغيير ويبلّغ؛ <b>نحن</b> نطلب وصف التغيير قبل التثبيت</li>
+      <li>إن غيّر الإصدار الغرض، فالحكم كله يعاد</li>
+    </ul>
+  </div>
+  <aside class="notes"><p>الإرشاد ينقل هذه المهل عن متطلبات إذن التسويق، والإبلاغ عبر نظام «غاد» الإلكتروني. هذا التزام المصنِّع. التزامنا نحن داخلي: لا يُثبَّت إصدار دون أن يقرأ وصفه شريف السعاوي من الشؤون التنظيمية ويقرر هل يعاد التحقق المحلي.</p><p>المصادر: SFDA MDS-G010، قسم Change Notification.</p></aside>
+</section>
+
+<section class="slide" id="off-label-use" data-lo="LO1">
+  <div class="kicker">الاستخدام خارج الغرض</div>
+  <h2>حين نستخدم أداة في غير غرضها، تنتقل المسؤولية إلينا</h2>
+  <div class="cols cols-12">
+    <div class="card c-coral"><h4>«أولوية» في الشبكة</h4><p class="small mb0">غرضها المعلن التنبؤ بالتكلفة لتخطيط الميزانية، و«لا تُستخدم في قرارات رعاية مريض بعينه». والشبكة تختار بها مرضى برنامج الرعاية.</p></div>
+    <ul class="bullets">
+      <li>المنتج يُحكم عليه بغرضه المعلن: ليس جهازًا طبيًا</li>
+      <li>استخدامنا له قرار سريري لم يتحقق منه أحد</li>
+      <li>العلاج: سؤال إلى الشؤون التنظيمية، وتحقق محلي، أو التوقف</li>
+    </ul>
+  </div>
+  <div class="callout note mt"><b>غدًا</b> نفتح هذه الدرجة ونرى من تُسقط.</div>
+  <aside class="notes"><p>في المختبر عمود أخير لهذا: علّم كل منتج يُستخدم في غير غرضه المعلن. من حكم على «أولوية» بأنها جهاز لأننا نستخدمها في الرعاية رأى الأمر الأهم: اقبل منه التعليل، وفرّق له بين حكم المنتج وحكم استخدامنا.</p></aside>
+</section>
+
+<section class="slide" id="clinical-accountability" data-lo="LO1">
+  <div class="kicker">المساءلة السريرية</div>
+  <h2>طبيب يُسأل عن كل قرار، مهما كانت الأداة</h2>
+  <table class="t">
+    <tr><th>الأداة</th><th>من يُسأل عن القرار في أرياف</th></tr>
+    <tr><td>«بارق»</td><td>د. منذر البطيري، رئيس الأشعة: القراءة النهائية لأخصائي الأشعة</td></tr>
+    <tr><td>«أولوية»</td><td>د. إيناس الذبيب، مديرة صحة السكان: من يدخل البرنامج</td></tr>
+    <tr><td>«مُحرِّر»</td><td>الطبيب الذي يوقّع الملاحظة، ود. كريم المعيقل مالكًا للأداة</td></tr>
+  </table>
+  <div class="callout tip mt"><b>ومبادئ أخلاقيات الذكاء الاصطناعي</b> تجعل المساءلة والعدالة والموثوقية والأمان مبادئ مستقلة: لا تُفوَّض إلى المورِّد.</div>
+  <aside class="notes"><p>الأداة لا تُسأل. المورِّد يُسأل عن منتجه بغرضه المعلن. الجهة تُسأل عن قرار الشراء والاستخدام. الطبيب يُسأل عن القرار السريري. اطلب من كل مشارك أن يسمّي هذا الشخص للأداة التي اختارها من حصره.</p><p>المصادر: سدايا، مبادئ أخلاقيات الذكاء الاصطناعي.</p></aside>
+</section>
+
+<section class="slide" id="check-version-update" data-lo="LO1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>المورِّد يقول: «تحديث اعتيادي»</h2>
+  <div class="quiz" data-type="single" data-lo="LO1">
+    <p class="lead">أداة توثيق ليست جهازًا طبيًا تعمل في عياداتكم. يصل إصدار جديد يضيف «اقتراح جرعات مناسبة»، والمورِّد يصفه بأنه تحديث اعتيادي. ما أول ما تفعله؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يثق بتسمية المورِّد: وصف التحديث بالاعتيادي ليس حكمًا في الغرض">تثبّته، فالمورِّد مسؤول عن تصنيف تحديثاته</div>
+      <div class="opt" data-why="يظن أن الطبيب المراجع يكفي: الأداة صارت تقترح علاجًا، وهذا غرض طبي له متطلبات قبل التشغيل">تثبّته وتطلب من الأطباء مراجعة الجرعات المقترحة</div>
+      <div class="opt" data-why="يحكم بالتقنية: لم يتغير النموذج وحده، بل تغيّر ما يفعله المنتج للمريض">تطلب من المورِّد بيان أداء النموذج الجديد فقط</div>
+      <div class="opt" data-ok>توقف التثبيت وتعيد الحكم في الغرض مع الشؤون التنظيمية</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> اقتراح الجرعات علاج لحالة مرضية: الغرض تغيّر، فالحكم يعاد، وقد يلزم إذن تسويق وتحقق جديد قبل أي تشغيل.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. إن اختار كثيرون «ب» فاسأل: من تحقق من أن الجرعات المقترحة صحيحة عند مرضانا؟ المراجعة البشرية شرط، لا بديل عن التحقق.</p></aside>
 </section>
 
 <section class="slide lab" id="lab-1-1" data-auto="lab" data-lab="1.1">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>المختبر دون ذكاء اصطناعي: تأكد أن المساعدات مغلقة. الخطوة 2 مع القاعة على P01 وP02. راقب من يحكم بالتقنية («فيه تعلم آلي») أو بالخوف («كل ما يمس المريض جهاز»)، وأعد سؤاله: ما الغرض الذي أعلنه المورِّد؟ الفخاخ: P03 وP04 وP06 وP09 وP11، لا تكشفها. من لم يحضر حصره يستخدم P10 في الخطوتين 1 و6. البداية من products_12.txt وclassification_sheet.xlsx، ولا يحتاج المختبر شيئًا سابقًا.</p></aside>
 </section>
 
 <!-- الجلسة 2 -->
 
-<section class="slide section" id="s2" data-auto="section" data-session="2"></section>
-
-<section class="slide" id="s2-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
+<section class="slide section" id="s2" data-auto="section" data-session="2">
+  <aside class="notes"><p>الجلسة الثانية: من الحساسية والنوعية إلى ما يعنيه التنبيه عند مرضانا (كتلة 1)، ثم لماذا يتغير الأداء بين المواقع (كتلة 2)، ثم العتبة قرار طاقة (كتلة 3)، ثم المختبر 1.2.</p></aside>
 </section>
 
-<section class="slide" id="s2-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
+<section class="slide" id="recap-thousand-cases" data-lo="LO2">
+  <div class="kicker">من المقرر السابق</div>
+  <h2>تذكير: جدول الألف حالة</h2>
+  <div class="cols cols-2 mid">
+    <table class="t">
+      <tr><th></th><th>مريض</th><th>سليم</th></tr>
+      <tr><td>تنبيه</td><td>المرضى × الحساسية</td><td>السليمون × (1 − النوعية)</td></tr>
+      <tr><td>لا تنبيه</td><td><em>حالة فائتة</em></td><td>السليمون × النوعية</td></tr>
+    </table>
+    <ul class="bullets">
+      <li>الحساسية والنوعية من المورِّد</li>
+      <li><b>عدد المرضى من عندنا</b>: معدل الانتشار في موقعنا</li>
+      <li>القيمة التنبؤية = التنبيهات الصحيحة ÷ كل التنبيهات</li>
+    </ul>
   </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
+  <aside class="notes"><p>هذا من <span class="en">USE-FLU-103</span>، فلا تُعِد شرحه. الجديد اليوم: نحسب لكل موقع، ولكل يوم، ونحوّل الحالات الفائتة إلى عدد في الشهر، لأن المجلس يقرر بأعداد لا بنسب.</p></aside>
+</section>
+
+<section class="slide" id="vendor-test-set" data-lo="LO2">
+  <div class="kicker">نشرة «بارق»</div>
+  <h2>في مجموعة اختبار المورِّد: تنبيه صحيح من كل خمسة</h2>
+  <div class="cols cols-3">
+    <div class="stat center"><div class="big">72%</div><div class="lbl">الحساسية المعلنة عند العتبة 0.05</div></div>
+    <div class="stat center"><div class="big">86%</div><div class="lbl">النوعية المعلنة</div></div>
+    <div class="stat center"><div class="big">21%</div><div class="lbl">من تنبيهاتها صحيح في مجموعة الاختبار</div></div>
+  </div>
+  <p class="lead mt">في مجموعة الاختبار 1,089 حالة استرواح صدر بين 22,433 صورة: انتشار 4.85%. النشرة لا تذكره.</p>
+  <aside class="notes"><p>الأرقام من تشغيل المختبر 1.2 على الدرجات الحقيقية: 782 تنبيهًا صحيحًا و2,905 كاذبًا عند 0.05، فالقيمة التنبؤية 21.2% في هذه المجموعة. اسأل: هل انتشار استرواح الصدر في مراكز الرعاية الأولية عندنا 4.85%؟ ستحسبون في المختبر ما يحدث حين لا يكون كذلك.</p></aside>
+</section>
+
+<section class="slide" id="accuracy-misleads" data-lo="LO2">
+  <div class="kicker">العنوان العريض في النشرة</div>
+  <h2>«دقة 86%» أقل من دقة من لا يفعل شيئًا</h2>
+  <div class="bars">
+    <div class="row"><span>«بارق» عند 0.05</span><div class="bar c-teal" style="--w:85.7%"></div><span class="val">85.7%</span></div>
+    <div class="row"><span>قاعدة «لا تنبّه أبدًا»</span><div class="bar c-coral" style="--w:95.1%"></div><span class="val">95.1%</span></div>
+  </div>
+  <div class="callout warn mt"><b>حين تندر الحالة</b> تصير الدقة مقياسًا للسليمين. اسأل عن الحساسية والنوعية، ثم احسب بانتشارك أنت.</div>
+  <aside class="notes"><p>كلا الرقمين من البيانات نفسها (المختبر 1.2، الخطوة 3). القاعدة التي لا تنبّه أبدًا تفوّت كل الحالات، ودقتها أعلى. هذه النقطة من <span class="en">USE-FLU-103</span>، لكن رؤيتها في نشرة منتج صحي تثبتها.</p></aside>
+</section>
+
+<section class="slide" id="two-numbers-for-a-board" data-lo="LO2">
+  <div class="kicker">ما يحتاجه المجلس</div>
+  <h2>رقمان يقرر بهما المجلس: تنبيهات في اليوم، وحالات فائتة في الشهر</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>صور في اليوم × الانتشار</b>كم مريضًا يمر بالموقع</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>الحساسية والنوعية</b>كم تنبيهًا، وكم منها صحيح</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>× 30</b>كم مريضًا يفوت في الشهر</div>
+  </div>
+  <div class="callout tip mt"><b>قلها بكلمات المجلس:</b> «من كل 100 تنبيه، كم صحيح؟» و«كم مريضًا لا تنبّه عليه الأداة في الشهر؟»</div>
+  <aside class="notes"><p>المختبر يبدأ بهذا الحساب باليد لموقع الطوارئ. لا تحسبه الآن: دعهم يكتشفوا الفرق بين المواقع بأنفسهم. د. مروة الحامدي ترأس المجلس وليست إحصائية: البيان يكتب لها.</p></aside>
+</section>
+
+<section class="slide" id="check-predictive-value" data-lo="LO2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>ما الذي يغيّر القيمة التنبؤية؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">الأداة نفسها، بالحساسية والنوعية نفسيهما، تعمل في الطوارئ وفي فحوص ما قبل التوظيف. في أيهما يصح عدد أكبر من كل 100 تنبيه، ولماذا؟</p>
+    <div class="opts">
+      <div class="opt" data-ok>الطوارئ، لأن انتشار الحالة بين المصوَّرين فيها أعلى</div>
+      <div class="opt" data-why="يظن أن القيمة التنبؤية خاصية للأداة: هي تتغير بالانتشار وإن ثبتت الحساسية والنوعية">كلاهما سواء، فالأداة واحدة والعتبة واحدة</div>
+      <div class="opt" data-why="يخلط بين عدد الصور وعدد المرضى: كثرة الصور السليمة تزيد التنبيهات الكاذبة">فحوص التوظيف، لأن عدد صورها في اليوم أكبر</div>
+      <div class="opt" data-why="يعكس العلاقة: الحالات النادرة تجعل أغلب التنبيهات كاذبة، لا صحيحة">فحوص التوظيف، لأن الحالات فيها نادرة فيسهل تمييزها</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> القيمة التنبؤية تعتمد على عدد المرضى بين المصوَّرين. حين يقل الانتشار تبقى التنبيهات الكاذبة كما هي تقريبًا، وتقل الصحيحة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. إن اختار كثيرون «ب» فارجع إلى جدول الألف حالة وغيّر عدد المرضى وحده أمامهم.</p></aside>
+</section>
+
+<section class="slide" id="external-validation" data-lo="LO2">
+  <div class="kicker">التحقق الخارجي</div>
+  <h2>أداء الموقع الذي دُرِّبت فيه الأداة لا ينتقل معها</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal flat"><h4>صور الصدر، ثلاثة مستشفيات</h4><p class="small mb0">نماذج للالتهاب الرئوي أدّت أسوأ خارج مواقع تدريبها في 3 من 5 مقارنات. الانتشار 34.2% في موقع، و1.2% و1.0% في الآخرين.</p></div>
+    <div class="card c-coral flat"><h4>نموذج إنتان واسع الانتشار</h4><p class="small mb0">في تحقق خارجي: مساحة تحت المنحنى 0.63، وفاته 67% من حالات الإنتان، ونبّه على 18% من كل حالات التنويم.</p></div>
+  </div>
+  <div class="callout tip mt"><b>اسأل المورِّد:</b> في أي مواقع اختُبرت الأداة، وبأي انتشار، وعلى أي أنواع من الصور؟</div>
+  <aside class="notes"><p>الدراستان تبيّنان وجهين: الأولى أن النموذج يتعلم خصائص الموقع لا المرض وحده، والثانية أن أداة منتشرة في مستشفيات كثيرة قد لا تُقاس خارجيًا إلا بعد سنوات. الإرشاد السعودي يطلب التحقق المحلي من الأجهزة المعتمدة في بلدان أخرى.</p><p>المصادر: Zech et al., PLoS Medicine 2018؛ Wong et al., JAMA Internal Medicine 2021 (الملخصان).</p></aside>
+</section>
+
+<section class="slide" id="hidden-stratification" data-lo="LO2">
+  <div class="kicker">الفئات المخفية</div>
+  <h2>المتوسط يخفي الصور التي تخطئ فيها الأداة أكثر</h2>
+  <div class="cols cols-2 mid">
+    <div class="bars">
+      <div class="row"><span>الصور القياسية (PA)</span><div class="bar c-teal" style="--w:74.5%"></div><span class="val">74.5%</span></div>
+      <div class="row"><span>الصور السريرية المتنقلة (AP)</span><div class="bar c-coral" style="--w:67.4%"></div><span class="val">67.4%</span></div>
+    </div>
+    <ul class="bullets">
+      <li>الحساسية عند 0.05 بحسب نوع الصورة، من الدرجات الحقيقية</li>
+      <li>الصورة المتنقلة تُلتقط للمريض في سريره: <b>الأشد مرضًا</b></li>
+      <li>85% من صور طوارئنا متنقلة</li>
+    </ul>
+  </div>
+  <div class="callout note mt"><b>في الأدبيات</b> فروق نسبية تتجاوز 20% في فئات فرعية مهمة سريريًا، لا يظهرها المتوسط.</div>
+  <aside class="notes"><p>الرقمان من المختبر 1.2: 277 من 411 حالة في الصور المتنقلة، و505 من 678 في القياسية. اسأل: من يصوَّر في سريره؟ المريض الذي لا يستطيع الوقوف، وهو من نخاف عليه أكثر. سيحسبون في المختبر ما يعنيه ذلك لعدد الحالات الفائتة في الطوارئ.</p><p>المصادر: Oakden-Rayner et al., ACM CHIL 2020 (الملخص)؛ reproduce-chexnet.</p></aside>
+</section>
+
+<section class="slide" id="reference-standard" data-lo="LO2">
+  <div class="kicker">مقابل ماذا قيست الأداة؟</div>
+  <h2>الحساسية لا تزيد صحةً على الوسم الذي قيست به</h2>
+  <ul class="bullets">
+    <li>وسوم مجموعة الصور العامة <b>مستخرجة آليًا من تقارير الأشعة</b>، وفيها أخطاء</li>
+    <li>صورة فيها أنبوب صدر قد تكون «حالة» عولجت، لا حالة تنتظر</li>
+    <li>في تحققنا المحلي: من يقرأ الصورة مرجعًا، وهل يعرف نتيجة الأداة؟</li>
+  </ul>
+  <div class="callout warn mt"><b>اسأل عن المعيار المرجعي</b> قبل أن تسأل عن الرقم.</div>
+  <aside class="notes"><p>هذا ما تقوله صفحة مصدر البيانات نفسها. د. منذر البطيري يصمم التحقق المحلي: قراءة مرجعية مستقلة، وقارئ لا يرى درجة الأداة.</p><p>المصادر: Wang et al., ChestX-ray8, 2017؛ ملف ATTRIBUTION في المختبر.</p></aside>
+</section>
+
+<section class="slide" id="check-subgroup" data-lo="LO2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أين تبحث أولًا؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">مورِّد أداة فرز يعرض حساسية 90% من ثلاثة مستشفيات جامعية، أغلب صورها قياسية. 80% من صور طوارئكم متنقلة. ما أول ما تطلبه؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يقدّم الحجم على الملاءمة: عينة أكبر من النوع نفسه لا تقيس الصور المتنقلة">عينة اختبار أكبر من المستشفيات الثلاثة نفسها</div>
+      <div class="opt" data-why="يقبل المتوسط: رقم واحد من مواقع لا تشبهنا لا يقول شيئًا عن طوارئنا">لا شيء، فالحساسية 90% كافية للطوارئ</div>
+      <div class="opt" data-ok>الحساسية للصور المتنقلة وحدها، ثم تحقق محلي على صورنا</div>
+      <div class="opt" data-why="يقفز إلى المقياس الخطأ: الدقة يرفعها السليمون حين تندر الحالة">دقة الأداة الإجمالية على المستشفيات الثلاثة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> الفئة التي تكثر عندنا وتقل عندهم هي حيث يخفي المتوسط الخطأ. رقمها وحدها، ثم صورنا نحن، هما الدليل.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. إن اختار كثيرون «أ» فارجع إلى شريحة الفئات المخفية: الحجم لا يعوّض الملاءمة.</p></aside>
+</section>
+
+<section class="slide" id="threshold-trade" data-lo="LO2">
+  <div class="kicker">العتبة</div>
+  <h2>كل عتبة تشتري تنبيهات أقل بحالات فائتة أكثر</h2>
+  <table class="t">
+    <tr><th>العتبة</th><th class="num">الحساسية</th><th class="num">النوعية</th></tr>
+    <tr><td>0.02</td><td class="num">86.6%</td><td class="num">72.2%</td></tr>
+    <tr class="hl"><td>0.05 (الموصى بها)</td><td class="num">71.8%</td><td class="num">86.4%</td></tr>
+    <tr><td>0.10</td><td class="num">60.1%</td><td class="num">92.8%</td></tr>
+    <tr><td>0.20</td><td class="num">44.0%</td><td class="num">96.2%</td></tr>
+  </table>
+  <p class="caption">الدرجات الحقيقية على 22,433 صورة، من تشغيل المختبر 1.2.</p>
+  <aside class="notes"><p>العتبة في «بارق» «قابلة للتعديل من إعدادات النظام»، كما تقول النشرة. هذا يعني أن قرار العتبة قرارنا نحن، لا قرار المورِّد. في المختبر يحوّلون كل صف إلى تنبيهات في اليوم وحالات فائتة في الشهر للطوارئ.</p></aside>
+</section>
+
+<section class="slide" id="alert-fatigue" data-lo="LO2">
+  <div class="kicker">إجهاد التنبيهات</div>
+  <h2>العتبة قرار طاقة: كم تنبيهًا يستطيع القارئ أن يقطع عمله له؟</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>تنبيه لا يقرؤه أحد فورًا لا يرتّب شيئًا</li>
+      <li>الكاذب المتكرر يعلّم القارئ أن يتجاهل الصحيح</li>
+      <li>طاقة الطوارئ عندنا: <b>30 تنبيهًا في اليوم</b></li>
+    </ul>
+    <div class="card c-coral"><h4>وما فوق الطاقة</h4><p class="small mb0">ينتظر في القائمة كغيره. فالعتبة الأدنى من الطاقة لا تحمي مريضًا إضافيًا: تضيف ضجيجًا.</p></div>
+  </div>
+  <div class="callout tip mt"><b>اختر أدنى عتبة تبقى في الطاقة،</b> ثم اكتب كم حالة تفوت بها في الشهر.</div>
+  <aside class="notes"><p>نموذج الإنتان في الشريحة السابقة نبّه على 18% من كل حالات التنويم: هذا إجهاد التنبيهات بالأرقام. قائدة جودة التمريض نغم المشيطي تسأل هنا: من يرد على التنبيه ليلًا؟</p></aside>
+</section>
+
+<section class="slide" id="board-statement" data-lo="LO2">
+  <div class="kicker">ما يخرج من المختبر</div>
+  <h2>بيان المجلس: أربع جمل، كل منها رقم</h2>
+  <div class="stack">
+    <div class="card flat c-teal"><p class="small mb0"><b>1.</b> في الموقع، من كل 100 تنبيه يكون كذا صحيحًا.</p></div>
+    <div class="card flat c-cyan"><p class="small mb0"><b>2.</b> ننتظر كذا تنبيهًا في اليوم، وطاقة القراءة الفورية كذا.</p></div>
+    <div class="card flat c-coral"><p class="small mb0"><b>3.</b> يفوت الأداة نحو كذا حالة في الشهر، وأغلبها في نوع كذا من الصور.</p></div>
+    <div class="card flat c-purple"><p class="small mb0"><b>4.</b> نوصي بالتشغيل، أو التشغيل بشرط، أو عدم التشغيل، في موقع محدد، والشرط مكتوب.</p></div>
+  </div>
+  <aside class="notes"><p>القالب في board_statement_template.txt. الجملة الرابعة توصية لموقع، لا للشبكة كلها: أداة واحدة قد تصلح لموقع ولا تصلح لآخر.</p></aside>
+</section>
+
+<section class="slide" id="check-threshold" data-lo="LO2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي عتبة تختار؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2">
+    <p class="lead">في موقع يستطيع قارئه أن يقطع عمله لـ40 تنبيهًا في اليوم، تعطي العتبات الثلاث 70 و35 و15 تنبيهًا يوميًا. أيها تختار، وماذا تكتب للمجلس؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يعظّم الحساسية ويتجاهل الطاقة: ما زاد على 40 ينتظر في القائمة ولا يُقرأ فورًا">العتبة الأولى، لأنها تفوّت أقل عدد من الحالات</div>
+      <div class="opt" data-why="يقلل الضجيج بلا سبب: عتبة أعلى من اللازم تفوّت حالات تستطيع الطاقة أن تقرأها">العتبة الثالثة، لأن تنبيهاتها الكاذبة أقل</div>
+      <div class="opt" data-why="يترك قرارنا للمورِّد: الطاقة والانتشار عندنا لا عنده">العتبة التي يوصي بها المورِّد، أيًّا كانت</div>
+      <div class="opt" data-ok>العتبة الثانية، مع عدد الحالات الفائتة بها في الشهر</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> أدنى عتبة تبقى في الطاقة تقرأ كل ما يمكن قراءته فورًا. وثمنها حالات فائتة يجب أن يراها المجلس رقمًا.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. إن اختار كثيرون «أ» فاسأل: ماذا يحدث للتنبيه رقم 41؟</p></aside>
 </section>
 
 <section class="slide lab" id="lab-1-2" data-auto="lab" data-lab="1.2">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
-</section>
-
-<!-- الجلسة 3 -->
-
-<section class="slide section" id="s3" data-auto="section" data-session="3"></section>
-
-<section class="slide" id="s3-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
-</section>
-
-<section class="slide" id="s3-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
-  </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
-</section>
-
-<section class="slide lab" id="lab-1-3" data-auto="lab" data-lab="1.3">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
-</section>
-
-<!-- الجلسة 4 -->
-
-<section class="slide section" id="s4" data-auto="section" data-session="4"></section>
-
-<section class="slide" id="s4-idea">
-  <div class="kicker">REPLACE: السؤال الذي تجيب عنه الشريحة</div>
-  <h2>REPLACE: فكرة واحدة في جملة</h2>
-  <div class="cols cols-2">
-    <ul class="bullets">
-      <li>REPLACE: ست نقاط على الأكثر، كل منها فكرة تامة</li>
-      <li>REPLACE: أبرز العبارة الأساسية، والأرقام من تشغيل المختبر لا من الذاكرة</li>
-    </ul>
-    <div class="card c-teal"><h4>في دراسة الحالة</h4><p class="small mb0">REPLACE: اربط الفكرة بدراسة الحالة وبياناتها</p></div>
-  </div>
-  <div class="callout warn mt"><b>أين يقع الخطأ.</b> REPLACE: الخطأ الذي سيقع فيه المشاركون، وكيف يتعرفون عليه</div>
-  <aside class="notes">REPLACE: ما تقوله، والعرض الحي، والسؤال للقاعة، والخطأ الشائع وحلّه</aside>
-</section>
-
-<section class="slide" id="s4-steps">
-  <div class="kicker">خطوة بخطوة</div>
-  <h2>REPLACE: عملية تظهر خطوة مع كل ضغطة</h2>
-  <div class="flow">
-    <div class="step c-teal"><b>1 · REPLACE: الاسم</b>REPLACE: ما يحدث أولًا</div>
-    <div class="arrow frag" data-frag="b">←</div><div class="step c-cyan frag" data-frag="b"><b>2 · REPLACE: الاسم</b>REPLACE: الجزء التالي</div>
-    <div class="arrow frag" data-frag="c">←</div><div class="step c-coral frag" data-frag="c"><b>3 · REPLACE: الاسم</b>REPLACE: النتيجة</div>
-  </div>
-  <div class="callout tip mt frag"><b>الخلاصة.</b> REPLACE: الجملة التي تبقى في الذاكرة</div>
-  <aside class="notes">اضغط مرة لكل خطوة، وقل ما تضيفه كل خطوة قبل ظهور التالية. REPLACE: المثال الذي تشرحه</aside>
-</section>
-
-<section class="slide lab" id="lab-1-4" data-auto="lab" data-lab="1.4">
-  <aside class="notes">REPLACE: ما تراقبه أثناء عمل المشاركين، والمشكلات المعتادة، والبديل لمن لم يُنهِ مختبرًا سابقًا</aside>
+  <aside class="notes"><p>الخطوة 1 باليد: تأكد أن كل مشارك يكتب عدد المرضى في اليوم قبل أي نسبة. الخطأ الشائع: نقل القيمة التنبؤية 21% من مجموعة الاختبار إلى المواقع. في الخطوة 3 الصف الأول محلول بدالة COUNTIFS؛ من لم يستعملها من قبل يضيف شرطًا ثالثًا على عمود view فقط. الأرقام المرجعية في answer_key.md. المختبر لا يحتاج نتيجة المختبر 1.1.</p></aside>
 </section>
 
 <section class="slide" id="wrap-up">
   <div class="kicker">خلاصة اليوم 1</div>
   <h2>ثلاثة أمور تبقى معك</h2>
   <div class="cols cols-3">
-    <div class="card c-teal"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-coral"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
-    <div class="card c-purple"><h4>تذكّر</h4><p class="small mb0">REPLACE: فكرة يحتفظ بها المشاركون</p></div>
+    <div class="card c-teal"><h4>الغرض يحكم</h4><p class="small mb0">الوضع النظامي يُقرأ من الغرض المعلن، ويعاد مع كل إصدار. والاستخدام خارج الغرض مسؤوليتنا.</p></div>
+    <div class="card c-coral"><h4>الرقم يُحسب عندنا</h4><p class="small mb0">الحساسية والنوعية من المورِّد، والانتشار والطاقة من موقعنا. المجلس يقرر بتنبيهات في اليوم وحالات فائتة في الشهر.</p></div>
+    <div class="card c-purple"><h4>المتوسط يخفي</h4><p class="small mb0">اسأل عن الفئة التي تكثر عندنا: الصور المتنقلة في الطوارئ.</p></div>
   </div>
+  <aside class="notes"><p>اطلب من مشاركَين أن يقرأ كل منهما بيانه للمجلس. اسأل القاعة: هل يفهم رئيس مجلس غير إحصائي كل جملة؟</p></aside>
 </section>
 
 <section class="slide dark" id="next" data-label="التالي">
-  <div class="kicker">التالي</div>
-  <h2>اليوم 2: REPLACE: موضوع هذه الوحدة في كلمات قليلة</h2>
-  <p class="lead">REPLACE: ما يجهزه المشاركون قبل ذلك، والمختبرات غير المكتملة يمكن إكمالها في المنزل</p>
-  <aside class="notes">REPLACE: الحسابات أو التثبيتات أو القراءة التي يحتاجها المشاركون قبل الوحدة التالية</aside>
+  <div class="kicker">غدًا · اليوم 2</div>
+  <h2>من يتضرر، ومن يراقب؟</h2>
+  <p class="lead">نفتح درجة «أولوية» على 5,000 سجل ونسمّي من تُسقطه، ثم نقيّم عشرين ملاحظة كتبها «مُحرِّر» ونكتب خطة التجربة الصامتة.</p>
+  <aside class="notes"><p>اطلب من الجميع أن يحضروا خريطتهم بسطرين: أداة الحصر و«بارق». من لم يكمل المختبر 1.2 يكمله مساءً من ملفاته، أو يكتب سطر «بارق» من بطاقة U01 في use_cases_14.txt.</p></aside>
 </section>
