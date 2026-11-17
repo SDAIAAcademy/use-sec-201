@@ -103,7 +103,27 @@ def lab12():
     se_mix = ap_share * out["AP"][0] + (1 - ap_share) * out["PA"][0]
     print(f"  emergency, sensitivity measured by view ({pct(ap_share)} AP): {pct(se_mix, 1)}; "
           f"missed/month {per_day * prev * (1 - se_mix) * 30:.1f}")
-    print("  emergency, by threshold (sensitivity for its mix of views):")
+    print("  emergency, by threshold, step 4 of the lab (sensitivity and specificity of the sheet's rows, all images):")
+    first = None
+    for th, key in ((0.02, "0.02"), (0.05, "all"), (0.10, "0.10"), (0.20, "0.20")):
+        se_t, sp_t = out[key]
+        sick = per_day * prev
+        alerts = sick * se_t + (per_day - sick) * (1 - sp_t)
+        print(f"    {th}: sensitivity {pct(se_t, 1)}, specificity {pct(sp_t, 1)}, alerts/day {alerts:.1f}, "
+              f"PPV {pct(sick * se_t / alerts, 1)}, missed/month {sick * (1 - se_t) * 30:.1f}")
+        if alerts <= k["capacity"] and first is None:
+            first = th
+    print(f"  step 4: lowest threshold within the reading capacity of {k['capacity']} alerts a day: {first}")
+    assert first == 0.05
+    print("  stretch, sensitivity at the threshold by subgroup:")
+    with open(F / "triage" / "triage_scores.csv", encoding="utf-8") as f:
+        demo = list(csv.DictReader(f))
+    for name, g in (("women", lambda r: r["sex"] == "F"), ("men", lambda r: r["sex"] == "M"),
+                    ("over 60", lambda r: int(r["age"]) > 60), ("60 or under", lambda r: int(r["age"]) <= 60)):
+        sub = [r for r in demo if g(r) and r["pneumothorax"] == "1"]
+        hit = sum(1 for r in sub if float(r["score"]) >= t)
+        print(f"    {name}: cases {len(sub)}, sensitivity {pct(hit / len(sub), 1)}")
+    print("  emergency, by threshold (board statement: sensitivity for its mix of views):")
     best = None
     for th in (0.02, 0.05, 0.10, 0.20):
         a = counts(rows, th, "AP"); p = counts(rows, th, "PA")
@@ -157,6 +177,14 @@ def lab21():
     assert r["alt"] > 1.8 * r["en"]
     o, i = out["outside care: yes"], out["outside care: no"]
     assert o["en"] / o["n"] < 0.6 * i["en"] / i["n"] and o["missed"] > i["missed"] + 0.1
+    CODED, REV = H["أمراض مزمنة مرمَّزة في النظام"], H["أمراض مزمنة بمراجعة الملف"]
+    print("  stretch, coded conditions as a share of conditions found on file review:")
+    shares = {}
+    for name, g in groups:
+        pop = [r for r in data if g(r)]
+        shares[name] = sum(r[CODED] for r in pop) / sum(r[REV] for r in pop)
+        print(f"    {name}: {pct(shares[name])}")
+    assert shares["remote villages"] < shares["city"] - 0.2 and shares["outside care: yes"] < shares["outside care: no"] - 0.2
     allhigh = [x for x in data if x[UNC] >= k["high_need_from"]]
     print(f"  high need overall {len(allhigh)}, enrolled {sum(1 for x in allhigh if x[EN] == 'نعم')}")
 
