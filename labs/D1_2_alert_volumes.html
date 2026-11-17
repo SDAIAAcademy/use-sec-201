@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="lab" data-track="fluency">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المختبر 1.2 · أحجام التنبيهات عند انتشارنا · الذكاء الاصطناعي في الأنظمة الصحية</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="D1_2_alert_volumes.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top"><div class="logo"></div><nav><a href="../index.html">صفحة المقرر</a><a href="../slides/day1.html#lab-1-2">العودة إلى الشرائح</a></nav></div>
+<span class="tag">المختبر 1.2</span>
+<h1>أحجام التنبيهات عند انتشارنا</h1>
+<p>تحسب ما تعنيه حساسية «بارق» ونوعيته في ثلاثة مواقع، ثم تعدّ من درجات حقيقية على صور صدر عامة، وتختار العتبة وتكتب بيان المجلس</p>
+<div class="meta"><span>75 دقيقة</span><span>اليوم 1</span><span>الجلسة 2: تنبيه الفرز عند انتشارنا نحن</span></div>
+</div>
+</header>
+<main class="wrap">
+<article class="lab" data-lab="1.2">
+<div class="box goal">
+  <h3>ستخرج من هذا المختبر بـ</h3>
+  <ul>
+    <li>حساب مفصل لكل موقع من مواقع الشبكة الثلاثة: كم تنبيهًا في اليوم، وكم منها صحيح، وكم حالة تفوت في الشهر.</li>
+    <li>عتبة تختارها بطاقة القراءة، وبيان من أربع جمل إلى مجلس الحوكمة السريرية، وسطر «بارق» في خريطتك.</li>
+  </ul>
+</div>
+
+<h2>ما تحتاجه</h2>
+<div class="files">
+  <a href="files/triage/bariq_vendor_sheet.txt" target="_blank"><b>triage/bariq_vendor_sheet.txt</b><span>نشرة المورِّد: الحساسية والنوعية والعتبة الموصى بها.</span></a>
+  <a href="files/triage/network_case_mix.txt" target="_blank"><b>triage/network_case_mix.txt</b><span>توزيع الحالات في المواقع الثلاثة وطاقة القراءة الفورية.</span></a>
+  <a href="files/triage/triage_scores.xlsx" download><b>triage/triage_scores.xlsx</b><span>22,433 صورة بدرجاتها، وورقة «الحساب» فيها صف محلول وخلايا ملوّنة تملؤها.</span></a>
+  <a href="files/triage/triage_scores.csv" download><b>triage/triage_scores.csv</b><span>البيانات نفسها لمن يعمل في Orange أو KNIME.</span></a>
+  <a href="files/triage/board_statement_template.txt" target="_blank"><b>triage/board_statement_template.txt</b><span>قالب البيان: أربع جمل.</span></a>
+  <a href="files/triage/ATTRIBUTION.txt" target="_blank"><b>triage/ATTRIBUTION.txt</b><span>مصدر الدرجات ورخصتها.</span></a>
+</div>
+<div class="callout note"><b>الدرجات حقيقية، والمنتج افتراضي.</b> «بارق» ومورِّده من صنع المقرر. أما الدرجات فأخرجها نموذج بحثي مفتوح على صور صدر عامة من المعاهد الوطنية الأمريكية للصحة، والوسوم مستخرجة آليًا من تقارير الأشعة وفيها أخطاء. لا صورة في الملف.</div>
+<p class="small">يجوز هنا مساعد عام بدور المعلّم: يشرح لك معادلة أو يراجع حسابك. الأرقام تحسبها أنت في الجدول.</p>
+
+<h2>الخطوات</h2>
+
+<div class="step">
+  <h3>1 · احسب بيدك لموقع الطوارئ: التنبيهات والقيمة التنبؤية والحالات الفائتة <span class="min">15 دقيقة</span></h3>
+  <p>خذ من النشرة الحساسية 72% والنوعية 86%، ومن توزيع الحالات: 180 صورة في اليوم، والانتشار 3.0%. املأ هذا الجدول ليوم واحد، ثم اضرب الحالات الفائتة في 30 للشهر.</p>
+  <table>
+    <tr><th>الخانة</th><th>كيف تحسبها</th><th>الطوارئ</th></tr>
+    <tr><td>مرضى في اليوم</td><td>الصور × الانتشار</td><td class="fill"></td></tr>
+    <tr><td>تنبيهات صحيحة</td><td>المرضى × الحساسية</td><td class="fill"></td></tr>
+    <tr><td>تنبيهات كاذبة</td><td>السليمون × (1 − النوعية)</td><td class="fill"></td></tr>
+    <tr><td>تنبيهات في اليوم</td><td>الصحيحة + الكاذبة</td><td class="fill"></td></tr>
+    <tr><td>القيمة التنبؤية الإيجابية</td><td>الصحيحة ÷ كل التنبيهات</td><td class="fill"></td></tr>
+    <tr><td>حالات فائتة في الشهر</td><td>المرضى × (1 − الحساسية) × 30</td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>2 · أكمل الحساب للموقعين الآخرين وقارن <span class="min">10 دقائق</span></h3>
+  <p>في ورقة «الحساب»، الجزء ب: الحساب نفسه للعيادات الخارجية (220 صورة، 0.8%) والرعاية الأولية (400 صورة، 0.1%). الأداة نفسها والعتبة نفسها. قل في جملة: لماذا تتغير القيمة التنبؤية هذا التغير؟</p>
+</div>
+
+<div class="step">
+  <h3>3 · عُدّ من البيانات: تحقق من ادعاء المورِّد، ثم قارن الصور المتنقلة بالقياسية <span class="min">15 دقيقة</span></h3>
+  <p>في ورقة «الحساب»، الجزء أ: الصف الأول محلول بدالة <code>COUNTIFS</code> على ورقة «البيانات». تحقق أن الحساسية والنوعية فيه هما ما تعلنه النشرة. ثم انسخ الصيغة إلى صفَّي الصور المتنقلة (<span class="en">AP</span>) والقياسية (<span class="en">PA</span>) وأضف شرطًا على عمود <code>view</code>.</p>
+  <p>أخيرًا احسب دقة قاعدة «لا تنبّه أبدًا» على البيانات نفسها، وقارنها بالدقة 86% في عنوان النشرة.</p>
+</div>
+
+<div class="step">
+  <h3>4 · حرّك العتبة في الطوارئ: التنبيهات مقابل الحالات الفائتة <span class="min">15 دقيقة</span></h3>
+  <p>أكمل صفوف العتبات 0.02 و0.10 و0.20 في الجزء أ. لكل عتبة خذ حساسيتها ونوعيتها، وأعد حساب الخطوة 1 للطوارئ. املأ:</p>
+  <table>
+    <tr><th>العتبة</th><th>تنبيهات في اليوم</th><th>القيمة التنبؤية</th><th>فائتة في الشهر</th></tr>
+    <tr><td>0.02</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>0.05</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>0.10</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+    <tr><td>0.20</td><td class="fill"></td><td class="fill"></td><td class="fill"></td></tr>
+  </table>
+</div>
+
+<div class="step">
+  <h3>5 · اختر العتبة بطاقة القراءة واكتب بيان المجلس <span class="min">12 دقيقة</span></h3>
+  <p>أخصائي أشعة الطوارئ يقرأ فورًا 30 تنبيهًا في اليوم. اختر أدنى عتبة تبقى في هذه الطاقة. ثم املأ <code>board_statement_template.txt</code>، واذكر في الجملة الثالثة أن 85% من صور الطوارئ متنقلة: ما الذي يعنيه ذلك لعدد الحالات الفائتة؟</p>
+  <div class="callout warn"><b>البيان لمجلس لا يقرأ المصطلحات.</b> «من كل 100 تنبيه» أوضح من «القيمة التنبؤية الإيجابية».</div>
+</div>
+
+<div class="step">
+  <h3>6 · أضف «بارق» سطرًا في خريطتك <span class="min">8 دقائق</span></h3>
+  <p>في <code>map_template.xlsx</code>: القيمة وجاهزية البيانات ومستوى المخاطر بمقياس <code>scoring_scale.txt</code>، والدليل من هذا المختبر في العمود الأخير. «بارق» يمس تشخيص مريض بعينه: سمِّ مراجعه البشري، واكتب كيف يستفسر المريض.</p>
+</div>
+
+<div class="step stretch">
+  <h3>✱ مهمة إضافية: الفئات الفرعية</h3>
+  <p>احسب الحساسية عند العتبة 0.05 للنساء وللرجال ولمن تجاوزوا الستين، من عمودي <code>sex</code> و<code>age</code>. قل أي فرق يستحق تحققًا محليًا، وما الذي يلزمك قبل أن تفسّره.</p>
+</div>
+
+<h2>أسئلة تحقق</h2>
+<ol class="checks">
+  <li>الأداة نفسها بالحساسية نفسها: لماذا يصح نحو واحد من كل سبعة من تنبيهاتها في موقع، ولا يصح إلا واحد من مئتين في موقع آخر؟</li>
+  <li>لماذا لا تكفي الدقة 86% دليلًا على أن الأداة مفيدة هنا؟</li>
+  <li>رفعتَ العتبة لتخفيف التنبيهات. ما الثمن، ومن يدفعه؟</li>
+</ol>
+
+<details class="instructor">
+  <summary>للمدرّب</summary>
+  <ul>
+    <li>المفتاح: <code>labs/solutions/answer_key.md</code>. التحقق: <code>uv run labs/solutions/check.py 1.2</code>.</li>
+    <li>الخطوة 1 (الطوارئ): 5.4 مرضى في اليوم، 3.89 تنبيهًا صحيحًا، 24.4 كاذبًا، 28.3 تنبيهًا، القيمة التنبؤية 13.7%، فائتة 45.4 في الشهر.</li>
+    <li>الخطوة 2: العيادات الخارجية 31.8 تنبيهًا، 4.0%، 14.8 فائتة. الرعاية الأولية 56.2 تنبيهًا، 0.5%، 3.4 فائتة. السبب: الانتشار.</li>
+    <li>الخطوة 3: الصور كلها 71.8% و86.4% (782، 307، 2,905، 18,439). المتنقلة 67.4% و87.9%. القياسية 74.5% و85.4%. دقة «لا تنبّه أبدًا» 95.1% مقابل 85.7% للأداة.</li>
+    <li>الخطوة 4: 0.02 ← 53.2 تنبيهًا و8.8% و21.7 فائتة؛ 0.05 ← 27.6 و14.0% و45.7؛ 0.10 ← 15.7 و20.6% و64.7؛ 0.20 ← 9.1 و26.2% و90.7. أدنى عتبة في الطاقة: 0.05.</li>
+    <li>الخطوة 5: بمزيج الطوارئ (85% متنقلة) الحساسية نحو 68.5%، فالفائتة نحو 51 في الشهر، أغلبها في الصور المتنقلة. التوصية المقبولة: تشغيل بشرط في الطوارئ وحدها، والتنبيه يرتّب ولا يستبعد، وتحقق محلي قبل التشغيل؛ لا تشغيل في الرعاية الأولية.</li>
+    <li>المهمة الإضافية: النساء 75.4%، الرجال 68.2%، فوق الستين 71.4%، حتى الستين 71.9%.</li>
+    <li>الخطأ الشائع: حساب القيمة التنبؤية من أعداد مجموعة الاختبار (21.2% فيها لأن انتشارها 4.85%) ونقلها إلى المواقع. أعد السؤال: ما الانتشار عندنا؟</li>
+    <li>من لم يستعمل <code>COUNTIFS</code> من قبل: أعطه الصف المحلول وقل له إن الفرق الوحيد شرط ثالث على العمود E.</li>
+  </ul>
+</details>
+</article>
+<nav class="pager"><a href="D1_1_device_status.html" rel="prev">→ المختبر السابق</a><a href="D2_1_risk_score_audit.html" rel="next">المختبر التالي ←</a></nav>
+</main>
+<footer><div class="wrap">أكاديمية سدايا · مسار الطلاقة في البيانات والذكاء الاصطناعي · الذكاء الاصطناعي في الأنظمة الصحية<br><span class="muted">إصدار المقرر 2027.1.0 · المحرّك 1.0.0 · بُني في ⁦2026-11-17⁩ · الإيداع f74c153</span></div></footer>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T20:02:16Z","version":"2027.1.0","commit":"f74c153"},"course":{"id":"use-sec-201","code":"USE-SEC-201","title":"الذكاء الاصطناعي في الأنظمة الصحية","track":"fluency","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/use-sec-201/","repo":"SDAIAAcademy/use-sec-201","home":"../index.html"},"lab":{"id":"1.2","title":"أحجام التنبيهات عند انتشارنا","summary":"تحسب ما تعنيه حساسية «بارق» ونوعيته في ثلاثة مواقع، ثم تعدّ من درجات حقيقية على صور صدر عامة، وتختار العتبة وتكتب بيان المجلس","minutes":75,"day":1,"unit":"اليوم 1","session":2,"deck":"../slides/day1.html#lab-1-2","prev":"D1_1_device_status.html","next":"D2_1_risk_score_audit.html","alt":{}},"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":null,"llms":"../llms.txt"},"tasks":[],"tools":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>

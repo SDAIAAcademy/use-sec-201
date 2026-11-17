@@ -1,0 +1,31 @@
+# الذكاء الاصطناعي في الأنظمة الصحية
+
+> تحكم في أدوات الذكاء الاصطناعي الصحية قبل شرائها وبعد تشغيلها: ما وضعها النظامي، وماذا يعني رقمها عند مرضاك، ومن يتضرر منها، ومن يُسأل عنها. مقرر من أكاديمية سدايا، الرمز USE-SEC-201، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/use-sec-201/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/use-sec-201/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/use-sec-201/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 12,714 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/use-sec-201/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: ماذا يعني الرقم هنا؟](https://sdaiaacademy.github.io/use-sec-201/slides/day1.md): تحكم في الوضع النظامي لاثني عشر منتجًا، ثم تحسب ما يعنيه تنبيه الفرز عند معدل الانتشار في مواقع شبكتك؛ الجلسات: جهاز طبي أم أداة إدارية؟، تنبيه الفرز عند انتشارنا نحن؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/slides/day1.html؛ نحو 5,535 من الوحدات النصية
+- [اليوم 2: من يتضرر، ومن يراقب؟](https://sdaiaacademy.github.io/use-sec-201/slides/day2.md): تدقّق درجة مخاطر تعلّمت التكلفة فتسمّي من أضرّت بهم، ثم تقيّم عشرين ملاحظة مولَّدة وتكتب خطة التجربة الصامتة وتفتتح خريطتك؛ الجلسات: الوسم الذي تتعلمه الدرجة، من الادعاء إلى التجربة الصامتة، ثم الخريطة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/slides/day2.html؛ نحو 4,958 من الوحدات النصية
+- [المناقشة الختامية: خريطة الفرص والمخاطر أمام مجلس الحوكمة السريرية](https://sdaiaacademy.github.io/use-sec-201/slides/capstone.md): فحص فردي دون ذكاء اصطناعي، ثم سبع دقائق تعرض فيها خريطتك ومشروعك التجريبي، وخمس دقائق يعيد فيها المجلس تقييم حالة يختارها؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/slides/capstone.html؛ نحو 1,497 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: تصنيف اثني عشر منتجًا](https://sdaiaacademy.github.io/use-sec-201/labs/D1_1_device_status.md): اليوم 1، الجلسة 1، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/labs/D1_1_device_status.html
+- [المختبر 1.2: أحجام التنبيهات عند انتشارنا](https://sdaiaacademy.github.io/use-sec-201/labs/D1_2_alert_volumes.md): اليوم 1، الجلسة 2، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/labs/D1_2_alert_volumes.html
+- [المختبر 2.1: تدقيق درجة «أولوية»](https://sdaiaacademy.github.io/use-sec-201/labs/D2_1_risk_score_audit.md): اليوم 2، الجلسة 1، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/labs/D2_1_risk_score_audit.html
+- [المختبر 2.2: عشرون ملاحظة وخطة](https://sdaiaacademy.github.io/use-sec-201/labs/D2_2_notes_and_plan.md): اليوم 2، الجلسة 2، 75 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/use-sec-201/labs/D2_2_notes_and_plan.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/use-sec-201/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 12,714 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/use-sec-201/context/day1.md): اليوم 1، نحو 5,535 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/use-sec-201/context/day2.md): اليوم 2، نحو 4,958 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/use-sec-201/context/capstone.md): المناقشة الختامية، نحو 1,497 من الوحدات النصية

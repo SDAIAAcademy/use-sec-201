@@ -1,0 +1,522 @@
+{
+  "v": 1,
+  "engine": "1.0.0",
+  "build": {
+    "at": "2026-11-17T20:02:16Z",
+    "version": "2027.1.0",
+    "commit": "f74c153"
+  },
+  "lang": "ar",
+  "dir": "rtl",
+  "totals": {
+    "decks": 3,
+    "slides": 83,
+    "words": 4953,
+    "notes": 82,
+    "notes_ratio": 0.99,
+    "activities": 11,
+    "styles": 11,
+    "slide_minutes": null,
+    "components": {
+      "cards": 58,
+      "pills": 3,
+      "callouts": 42,
+      "tables": 11,
+      "code": 0,
+      "tokens": 0,
+      "flows": 6,
+      "stats": 13,
+      "bars": 3,
+      "meters": 0,
+      "agendas": 3,
+      "quizzes": 11,
+      "checklists": 4,
+      "prompts": 0,
+      "chats": 0,
+      "tools": 0,
+      "traces": 0,
+      "ladders": 0,
+      "figures": 0,
+      "matrices": 0,
+      "timers": 4,
+      "columns": 35,
+      "images": 0,
+      "drawings": 0,
+      "fragments": 0
+    },
+    "minutes": 600
+  },
+  "decks": [
+    {
+      "deck": "day1",
+      "kind": "day",
+      "label": "اليوم 1",
+      "title": "ماذا يعني الرقم هنا؟",
+      "slides": 36,
+      "words": 2339,
+      "notes": 36,
+      "notes_ratio": 1,
+      "activities": 5,
+      "styles": 2,
+      "slide_minutes": null,
+      "components": {
+        "cards": 31,
+        "pills": 3,
+        "callouts": 19,
+        "tables": 5,
+        "code": 0,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 5,
+        "bars": 1,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 5,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 17,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 300,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "جهاز طبي أم أداة إدارية؟",
+          "slides": 14,
+          "words": 963,
+          "notes": 14,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 15,
+            "pills": 0,
+            "callouts": 8,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 2,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 8,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "تنبيه الفرز عند انتشارنا نحن",
+          "slides": 17,
+          "words": 1025,
+          "notes": 17,
+          "notes_ratio": 1,
+          "activities": 3,
+          "styles": 2,
+          "slide_minutes": null,
+          "components": {
+            "cards": 12,
+            "pills": 0,
+            "callouts": 9,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 3,
+            "bars": 1,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 3,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        }
+      ]
+    },
+    {
+      "deck": "day2",
+      "kind": "day",
+      "label": "اليوم 2",
+      "title": "من يتضرر، ومن يراقب؟",
+      "slides": 34,
+      "words": 2100,
+      "notes": 34,
+      "notes_ratio": 1,
+      "activities": 6,
+      "styles": 0,
+      "slide_minutes": null,
+      "components": {
+        "cards": 21,
+        "pills": 0,
+        "callouts": 20,
+        "tables": 4,
+        "code": 0,
+        "tokens": 0,
+        "flows": 3,
+        "stats": 8,
+        "bars": 0,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 6,
+        "checklists": 2,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 0,
+        "columns": 16,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": 300,
+      "sessions": [
+        {
+          "n": 1,
+          "label": "الجلسة 1",
+          "title": "الوسم الذي تتعلمه الدرجة",
+          "slides": 14,
+          "words": 880,
+          "notes": 14,
+          "notes_ratio": 1,
+          "activities": 2,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 6,
+            "pills": 0,
+            "callouts": 8,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 1,
+            "stats": 5,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 2,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 7,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        },
+        {
+          "n": 2,
+          "label": "الجلسة 2",
+          "title": "من الادعاء إلى التجربة الصامتة، ثم الخريطة",
+          "slides": 17,
+          "words": 1039,
+          "notes": 17,
+          "notes_ratio": 1,
+          "activities": 3,
+          "styles": 0,
+          "slide_minutes": null,
+          "components": {
+            "cards": 15,
+            "pills": 0,
+            "callouts": 11,
+            "tables": 2,
+            "code": 0,
+            "tokens": 0,
+            "flows": 2,
+            "stats": 3,
+            "bars": 0,
+            "meters": 0,
+            "agendas": 0,
+            "quizzes": 3,
+            "checklists": 1,
+            "prompts": 0,
+            "chats": 0,
+            "tools": 0,
+            "traces": 0,
+            "ladders": 0,
+            "figures": 0,
+            "matrices": 0,
+            "timers": 0,
+            "columns": 9,
+            "images": 0,
+            "drawings": 0,
+            "fragments": 0
+          },
+          "minutes": 150,
+          "lab_minutes": 75
+        }
+      ]
+    },
+    {
+      "deck": "capstone",
+      "kind": "capstone",
+      "label": "المناقشة الختامية",
+      "title": "خريطة الفرص والمخاطر أمام مجلس الحوكمة السريرية",
+      "slides": 13,
+      "words": 514,
+      "notes": 12,
+      "notes_ratio": 0.92,
+      "activities": 0,
+      "styles": 9,
+      "slide_minutes": null,
+      "components": {
+        "cards": 6,
+        "pills": 0,
+        "callouts": 3,
+        "tables": 2,
+        "code": 0,
+        "tokens": 0,
+        "flows": 0,
+        "stats": 0,
+        "bars": 2,
+        "meters": 0,
+        "agendas": 1,
+        "quizzes": 0,
+        "checklists": 0,
+        "prompts": 0,
+        "chats": 0,
+        "tools": 0,
+        "traces": 0,
+        "ladders": 0,
+        "figures": 0,
+        "matrices": 0,
+        "timers": 4,
+        "columns": 2,
+        "images": 0,
+        "drawings": 0,
+        "fragments": 0
+      },
+      "minutes": null,
+      "sessions": []
+    }
+  ],
+  "coverage": [
+    {
+      "id": "LO1",
+      "text": "يميّز منتجات الذكاء الاصطناعي الخاضعة لتنظيم الأجهزة الطبية من الأدوات الإدارية، ويشرح ما يتطلبه كل منها، استنادًا إلى اثني عشر وصفًا لمنتجات",
+      "level": "Awareness",
+      "slides": [
+        "day1#three-uses",
+        "day1#prework-inventory",
+        "day1#intended-use-decides",
+        "day1#same-tech-two-verdicts",
+        "day1#three-traps",
+        "day1#check-wellness-app",
+        "day1#what-a-device-requires",
+        "day1#what-a-tool-requires",
+        "day1#change-control",
+        "day1#off-label-use",
+        "day1#clinical-accountability",
+        "day1#check-version-update"
+      ],
+      "activities": [
+        "day1#check-wellness-app-q1",
+        "day1#check-version-update-q1"
+      ],
+      "sessions": [
+        "day1/1"
+      ],
+      "labs": [
+        "1.1"
+      ],
+      "questions": [
+        "q-device-01",
+        "q-device-02",
+        "q-device-03",
+        "q-device-04",
+        "q-device-05"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO2",
+      "text": "يحسب القيمة التنبؤية وحجم التنبيهات والحالات الفائتة لأداة فرز في التصوير الطبي عند معدل الانتشار المحلي، استنادًا إلى الحساسية والنوعية المعلنتين من المورِّد وتوزيع الحالات في الشبكة",
+      "level": "Applied",
+      "slides": [
+        "day1#recap-thousand-cases",
+        "day1#vendor-test-set",
+        "day1#accuracy-misleads",
+        "day1#two-numbers-for-a-board",
+        "day1#check-predictive-value",
+        "day1#external-validation",
+        "day1#hidden-stratification",
+        "day1#reference-standard",
+        "day1#check-subgroup",
+        "day1#threshold-trade",
+        "day1#alert-fatigue",
+        "day1#board-statement",
+        "day1#check-threshold",
+        "day2#check-review-day1"
+      ],
+      "activities": [
+        "day1#check-predictive-value-q1",
+        "day1#check-subgroup-q1",
+        "day1#check-threshold-q1",
+        "day2#check-review-day1-q1"
+      ],
+      "sessions": [
+        "day1/2"
+      ],
+      "labs": [
+        "1.2"
+      ],
+      "questions": [
+        "q-alerts-01",
+        "q-alerts-02",
+        "q-alerts-03",
+        "q-alerts-04",
+        "q-alerts-05"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO3",
+      "text": "يحلل درجة مخاطر لصحة السكان من حيث اختيار الوسم والخطأ بحسب الفئات الفرعية من المرضى، على درجة مدربة على التكلفة و5000 سجل اصطناعي",
+      "level": "Applied",
+      "slides": [
+        "day2#risk-scores-ration",
+        "day2#label-is-a-choice",
+        "day2#obermeyer",
+        "day2#why-cost-under-ranks",
+        "day2#check-label",
+        "day2#coded-data",
+        "day2#interoperability",
+        "day2#error-by-subgroup",
+        "day2#health-data-sensitive",
+        "day2#deidentification-limits",
+        "day2#who-reviews-the-list",
+        "day2#check-subgroup-harm"
+      ],
+      "activities": [
+        "day2#check-label-q1",
+        "day2#check-subgroup-harm-q1"
+      ],
+      "sessions": [
+        "day2/1"
+      ],
+      "labs": [
+        "2.1"
+      ],
+      "questions": [
+        "q-label-01",
+        "q-label-02",
+        "q-label-03",
+        "q-label-04",
+        "q-label-05"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO4",
+      "text": "يعدّ خطة للتحقق المحلي من الصحة وللتجربة الصامتة لأداة التوثيق المحيطي (ambient documentation)، استنادًا إلى ادعاء من المورِّد بتوفير الوقت وعشرين ملاحظة مولَّدة",
+      "level": "Applied",
+      "slides": [
+        "day2#ambient-claim",
+        "day2#ambient-trial",
+        "day2#omissions-and-inventions",
+        "day2#small-samples",
+        "day2#check-sample",
+        "day2#validation-path",
+        "day2#plan-parts",
+        "day2#monitoring",
+        "day2#check-stop-criterion"
+      ],
+      "activities": [
+        "day2#check-sample-q1",
+        "day2#check-stop-criterion-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-notes-01",
+        "q-notes-02",
+        "q-notes-03",
+        "q-notes-04",
+        "q-notes-05"
+      ],
+      "covered": true
+    },
+    {
+      "id": "LO5",
+      "text": "يبني خريطة للفرص والمخاطر ترتب حالات الاستخدام الصحية بحسب القيمة وجاهزية البيانات ومستوى المخاطر، في الشبكة الافتراضية ذات البيانات الاصطناعية",
+      "level": "Performance",
+      "slides": [
+        "day2#map-axes",
+        "day2#map-ranking",
+        "day2#high-tier-rule",
+        "day2#check-map-tier"
+      ],
+      "activities": [
+        "day2#check-map-tier-q1"
+      ],
+      "sessions": [
+        "day2/2"
+      ],
+      "labs": [
+        "2.2"
+      ],
+      "questions": [
+        "q-map-01",
+        "q-map-02",
+        "q-map-03",
+        "q-map-04",
+        "q-map-05"
+      ],
+      "covered": true
+    }
+  ]
+}
