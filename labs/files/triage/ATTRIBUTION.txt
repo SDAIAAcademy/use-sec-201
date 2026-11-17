@@ -10,6 +10,11 @@ NIH Clinical Center ChestX-ray14 dataset (Wang et al., ChestX-ray8, CVPR 2017,
 https://arxiv.org/abs/1705.02315). The labels were text-mined from radiology reports: they
 contain errors. No image is included here.
 
+Acknowledgement: the ChestX-ray14 data are provided by the NIH Clinical Center. Original download
+site: https://nihcc.app.box.com/v/ChestXray-NIHCC. Please cite: Wang X, Peng Y, Lu L, Lu Z,
+Bagheri M, Summers RM. ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on
+Weakly-Supervised Classification and Localization of Common Thorax Diseases. IEEE CVPR 2017.
+
 This is a research model, not a marketed product. "Bariq" in the course is fictional.
 
 BSD 3-Clause notice of reproduce-chexnet: Redistribution and use in source and binary forms,
