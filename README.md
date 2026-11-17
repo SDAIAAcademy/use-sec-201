@@ -34,7 +34,7 @@ AI in Health Systems
 | المناقشة الختامية | خريطة الفرص والمخاطر أمام مجلس الحوكمة السريرية |  | [`slides/capstone.html`](slides/capstone.html) |
 <!-- /academy:units -->
 
-كل جلسة 150 دقيقة: نحو 75 دقيقة من المفاهيم في ثلاث كتل، تنتهي كل كتلة بنقطة تحقق، ثم مختبر مدته 75 دقيقة. يأتي
+كل جلسة 150 دقيقة: نحو 75 دقيقة من المفاهيم في ثلاث كتل، مع نقطتي تحقق أو ثلاث، ثم مختبر مدته 75 دقيقة. يأتي
 المقرر بعد USE-FLU-103 «كيف تتعلم أنظمة الذكاء الاصطناعي وأين تخفق»، ويكمله USE-PRO-209 للاستخدام السريري الفردي.
 
 ## دراسة الحالة
@@ -123,11 +123,11 @@ AI in Health Systems
 
 ### الأدلة السريرية
 
-- [Obermeyer et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science](https://doi.org/10.1126/science.aax2342)
-- [Wong et al. (2021). External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients. JAMA Internal Medicine](https://doi.org/10.1001/jamainternmed.2021.2626)
+- [Obermeyer et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science](https://pubmed.ncbi.nlm.nih.gov/31649194/)
+- [Wong et al. (2021). External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients. JAMA Internal Medicine](https://pubmed.ncbi.nlm.nih.gov/34152373/)
 - [Zech et al. (2018). Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs. PLoS Medicine](https://doi.org/10.1371/journal.pmed.1002683)
-- [Oakden-Rayner et al. (2020). Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging. ACM CHIL](https://doi.org/10.1145/3368555.3384468)
-- [Lukac et al. (2025). Ambient AI Scribes in Clinical Practice: A Randomized Trial. NEJM AI](https://doi.org/10.1056/aioa2501000)
+- [Oakden-Rayner et al. (2020). Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging. ACM CHIL](https://pubmed.ncbi.nlm.nih.gov/33196064/)
+- [Lukac et al. (2025). Ambient AI Scribes in Clinical Practice: A Randomized Trial. NEJM AI](https://pubmed.ncbi.nlm.nih.gov/41497288/)
 - [Asgari et al. (2025). A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation. npj Digital Medicine](https://doi.org/10.1038/s41746-025-01670-7)
 - [Kwong et al. (2022). The silent trial: the bridge between bench-to-bedside clinical AI applications. Frontiers in Digital Health](https://doi.org/10.3389/fdgth.2022.929508)
 - [Vasey et al. (2022). Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI. Nature Medicine](https://doi.org/10.1038/s41591-022-01772-9)

@@ -362,11 +362,11 @@
       "items": [
         {
           "title": "Obermeyer et al. (2019). Dissecting racial bias in an algorithm used to manage the health of populations. Science",
-          "url": "https://doi.org/10.1126/science.aax2342"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31649194/"
         },
         {
           "title": "Wong et al. (2021). External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients. JAMA Internal Medicine",
-          "url": "https://doi.org/10.1001/jamainternmed.2021.2626"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34152373/"
         },
         {
           "title": "Zech et al. (2018). Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs. PLoS Medicine",
@@ -374,11 +374,11 @@
         },
         {
           "title": "Oakden-Rayner et al. (2020). Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging. ACM CHIL",
-          "url": "https://doi.org/10.1145/3368555.3384468"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33196064/"
         },
         {
           "title": "Lukac et al. (2025). Ambient AI Scribes in Clinical Practice: A Randomized Trial. NEJM AI",
-          "url": "https://doi.org/10.1056/aioa2501000"
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41497288/"
         },
         {
           "title": "Asgari et al. (2025). A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation. npj Digital Medicine",
